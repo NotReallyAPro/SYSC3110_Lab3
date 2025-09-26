@@ -7,8 +7,10 @@ public class AddressBook {
         buddies = new ArrayList<BuddyInfo>();
     }
 
-    public void addBuddy(BuddyInfo buddy) {
-        buddies.add(buddy);
+    public void addBuddy(BuddyInfo aBuddy) {
+        if (aBuddy != null) {
+            buddies.add(aBuddy);
+        }
     }
 
     public void removeBuddy(BuddyInfo buddy) {
