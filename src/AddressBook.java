@@ -16,6 +16,15 @@ public class AddressBook {
     public void removeBuddy(BuddyInfo buddy) {
         buddies.remove(buddy);
     }
+
+    public void listBuddies() {
+        for (BuddyInfo buddy : buddies) {
+            System.out.println("Name: " + buddy.getName());
+            System.out.println("Address: " + buddy.getAddress());
+            System.out.println("Phone Number: " + buddy.getPhoneNumber());
+            System.out.println();
+        }
+    }
     
     //Main method test
     public static void main(String[] args) {
